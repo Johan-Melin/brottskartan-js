@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="maps.css">
+  </head>
+  <body>
+    <div id="map-container">
+      <div id="map"></div>
+      <div id="control">
+      </div>
+    </div>
+
+    <script src="maps.js"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe5hHFXLKUlmZVGl2dWzYXSg1wPEEZhoo&callback=initMap&v=weekly&channel=2"
+      async
+    ></script>
+  </body>
+</html>
